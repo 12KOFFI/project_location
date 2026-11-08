@@ -1,0 +1,21 @@
+NOTES DU PROJET - APPLICATION DE GESTION DE LOCATION DE VEHICULES
+
+1. METHODE DE TRAVAIL
+
+Le developpement de cette application suit toujours le meme principe que celui
+de la formation Laravel et React deja commencee.
+
+2. REGLE DE PENALITE DE RETARD (validee)
+
+Retard          Penalite
+Jusqu'a 2 h     10 000 FCFA par heure entamee
+Plus de 2 h     1 jour supplementaire au tarif journalier, par tranche de 24 h entamee
+
+Exemples avec un tarif de 30 000 FCFA par jour :
+
+Retard     Calcul                         Penalite
+30 min     1 heure entamee x 10 000       10 000 FCFA
+1 h 30     2 heures entamees x 10 000     20 000 FCFA
+2 h pile   2 heures x 10 000              20 000 FCFA
+3 h        1 jour x 30 000                30 000 FCFA
+26 h       2 jours x 30 000               60 000 FCFA
